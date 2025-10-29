@@ -1,5 +1,5 @@
 # file called my_program.py
-import functions_if_name as functions
+import functions_if_name as fct # fct is an alias of functions_if_name
 
-type(__name__)
-functions.my_func("CSC15 student")
+print("Name module example_if_name", __name__)
+fct.my_func("CSC15 student second")
