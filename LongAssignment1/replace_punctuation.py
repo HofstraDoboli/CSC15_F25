@@ -10,8 +10,7 @@
 
 def replace_punctuation(text, exclamation_count = 0, semicolon_count = 0):
     new_text = ""
-
-
+    
     print('Exclamation count:', exclamation_count)
     print('Semicolon count:', semicolon_count)
     return new_text
