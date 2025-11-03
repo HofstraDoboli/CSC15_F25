@@ -43,10 +43,10 @@ if __name__ == "__main__":
     sample_array = [4, 2, 7, 1, 7, 10, 5]
     target_value = 7
 
-    result = linear_search(sample_array, target_value, start_index = 0)
+    result = linear_search_sorted(sample_array, target_value, start_index = 0)
     while result != -1 and result < len(sample_array):
         print(f"Target found at index: {result}")
-        result = linear_search(sample_array, target_value, start_index = result + 1)
+        result = linear_search_sorted(sample_array, target_value, start_index = result + 1)
 
     '''
     sample_array = [4, 2, 7, 1, 7, 10, 5]
