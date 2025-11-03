@@ -36,16 +36,6 @@ def linear_search_sorted(sorted_arr, target, start_index = 0):
                   # get out of the closest loop 
     return -1 # target is larger than any value in the list, target is not in the list
 
-
-
-
-
-    for index in range(start_index, len(sorted_arr)):
-        if sorted_arr[index] == target:
-            return index
-        elif sorted_arr[index] > target:
-            break
-    return -1
 if __name__ == "__main__":
     '''
     find all occurences of a value in a list
