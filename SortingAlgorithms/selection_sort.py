@@ -18,6 +18,17 @@ def selection_sort(lst):
             swap lst[i] with lst[min_index]
         ENDFOR
     '''
+    for i in range(len(lst)): # for a number of passes equal to the size of the list
+        min_index = i # assume the smallest item is at index i
+        for j in range(i+1, len(lst)): # search for the smallest item in the list from index i+! to end
+            if lst[j] < lst[min_index]:
+                min_index = j # update min_index if a smaller item is found
+        
+        # swap lst[i] with lst[min_index]
+        temp       = lst[i]
+        lst[i]     = lst[min_index]
+        lst[min_index] = temp
+    return lst
 
 
 if __name__ == "__main__":
