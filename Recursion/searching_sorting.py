@@ -33,11 +33,12 @@ def binary_search_recursive(data_list, target, low, high):
         middle_index = (low + high) // 2
         if data_list[middle_index] == target:
             result = True 
-        elif data_list[middle_index] > target:
+        elif data_list[middle_index] < target:
             result = binary_search_recursive(data_list, target, middle_index+1, high)
         else: # search in the first half
             result = binary_search_recursive(data_list, target, low, middle_index-1)
-
+    
+    return result
 
 # ============================================================
 # Function: linear_search_recursive
