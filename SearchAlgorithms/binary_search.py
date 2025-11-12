@@ -10,10 +10,13 @@ def binary_search(arr, target):
     start_index = 0
     end_index = len(arr) - 1
     num_comparisons = 0 
+
     while start_index <= end_index:
+
         mid_index = (start_index + end_index) // 2
         mid_value = arr[mid_index]
         num_comparisons += 1
+        
         if mid_value == target:
             return mid_index
         elif mid_value > target: # search first half (middle value is larger than target)
