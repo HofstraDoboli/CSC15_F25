@@ -1,3 +1,4 @@
+
 def print_num_pattern(num1, num2):
     # Base case
     if num1 < 0:
@@ -11,6 +12,6 @@ def print_num_pattern(num1, num2):
 
 
 if __name__ == "__main__":
-    num1 = int(input("Enter num1: "))
-    num2 = int(input("Enter num2: "))
+    num1 = int(input("Enter num1: ")) #12
+    num2 = int(input("Enter num2: ")) # 3
     print_num_pattern(num1, num2)
